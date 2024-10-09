@@ -1,5 +1,7 @@
+import { data } from './credentials.json';
+const { giphy, tenor } = data;
 export const getGifsGiphy = async (category) => {
-    const apiKey = 'AYvxuZUeweVOPnoM1q3DnZcHXRl5hRsc';
+    const apiKey = giphy.apiKey;
     const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${category}&limit=3`;
     const resp = await fetch(url);
     const { data } = await resp.json();
@@ -8,7 +10,7 @@ export const getGifsGiphy = async (category) => {
 };
 
 export const getGifsTenor = async (category) => {
-    const apiKey = 'AIzaSyAttujC7CrBsu5jUeTMm4P5qoEiMLGaDt8';
+    const apiKey = tenor.apiKey;
     const clientKey = 'Development';
     const url = `https://tenor.googleapis.com/v2/search?q=${category}&key=${apiKey}&client_key=${clientKey}&limit=4`;
     const resp = await fetch(url);
