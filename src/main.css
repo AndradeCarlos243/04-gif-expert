@@ -1,0 +1,109 @@
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(234, 234, 234);
+}
+  
+body {
+    padding: 60px;
+}
+
+input {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(97, 32, 158);
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.card {
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    width: 10rem;
+}
+
+.card p {
+    background-color: white;
+    flex: 1;
+    font-size: .9rem;
+    margin-top: 5px;
+    padding: 5px 20px 0px 20px;
+    text-align: start;
+}
+
+.card .img-container {
+    background-color: white;
+    width: 10rem;
+    height: 10rem;
+}
+
+.card img {
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+}
+
+.card .tag {
+    background-color: rgba(107, 113, 185, 0.74);
+    color: white;
+    font-size: .8rem;
+    padding: .3rem 1rem;
+    margin: 0.1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 7rem;
+}
+
+.card .tag:hover {
+    background-color: rgba(107, 113, 185, 1);
+    cursor: pointer;
+}
+
+.card .card-tags {
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.logo-tenor
+{
+    width: 5rem;
+    margin: .5rem 0;
+}
