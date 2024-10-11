@@ -1,10 +1,10 @@
 import { PropTypes } from 'prop-types';
 
-export const GifItem = ({ url, title }) => {
+export const GifItem = ({ url, title, description }) => {
   return (
     <div className='card'>
         <div className='img-container'>
-            <img src={url} alt={title} width={300} height={300} style={{objectFit: 'cover'}}/>
+            <img src={url} alt={description} width={300} height={300} style={{objectFit: 'cover'}}/>
         </div>
         {/* <div className='card-tags'>
             {
@@ -23,5 +23,5 @@ export const GifItem = ({ url, title }) => {
 GifItem.propTypes = {
     url: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    tags: PropTypes.array.isRequired,
+    description: PropTypes.string.isRequired
 }

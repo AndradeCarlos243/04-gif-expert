@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en GifItem Debe hacer match con el snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <div
+      class="img-container"
+    >
+      <img
+        alt="eromanga sensei"
+        height="300"
+        src="https://tenor.com/es-419/view/anime-sagiri-eromanga-sensei-licking-lips-gif-15568420"
+        style="object-fit: cover;"
+        width="300"
+      />
+    </div>
+    <p>
+      eromanga-sesei
+    </p>
+  </div>
+</div>
+`;

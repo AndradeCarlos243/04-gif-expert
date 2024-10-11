@@ -12,9 +12,10 @@ export const getGifsGiphy = async (category) => {
 export const getGifsTenor = async (category) => {
     const apiKey = tenor.apiKey;
     const clientKey = 'Development';
-    const url = `https://tenor.googleapis.com/v2/search?q=${category}&key=${apiKey}&client_key=${clientKey}&limit=4`;
+    const url = `https://tenor.googleapis.com/v2/search?q=${category}&key=${apiKey}&client_key=${clientKey}&limit=4&locale=es&country=MX&contentfilter=low`;
     const resp = await fetch(url);
+    if(!resp.ok) return [];
     const { results } = await resp.json();
-    const gifs = results.map( ({id, content_description: title, media_formats: {mediumgif: {url}}, tags}) => ({id, title, url, tags}) );
+    const gifs = results.map( ({id, content_description: description, title, media_formats: {mediumgif: {url}}, tags}) => ({id, description, title, url, tags}) );
     return gifs;
 }

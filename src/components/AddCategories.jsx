@@ -18,7 +18,7 @@ export const AddCategory = ({ handleAddCategory }) => {
 
     return (
         <>
-            <form onSubmit={ handleFormAdd }>
+            <form onSubmit={ handleFormAdd } aria-label='form'>
                 <input type="text" name="txt-category" id="txt-category" value={ txtCategory } placeholder='Buscar Gifs' onChange={ handleChangeCategory }/>
             </form>
         </>
