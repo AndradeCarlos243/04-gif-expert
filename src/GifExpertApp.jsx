@@ -3,7 +3,7 @@ import { useState } from 'react';
 import tenorLogo from './assets/svg/via_tenor_logo_grey.svg';
 
 export const GifExpertApp = () => {
-    const [ categories, setCategories ] = useState(['Mario Kart 8', 'The legend of Zelda: Tears of the kingdom', 'Plants vs Zombies', 'It Takes Two EA']);
+    const [ categories, setCategories ] = useState(['Super Mario World', 'The legend of Zelda', 'Plants vs Zombies', 'It Takes Two']);
 
     const handleAddCategory = ( category ) => {
         if( categories.includes(category) ) return false;
