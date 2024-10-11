@@ -1,9 +1,9 @@
 import { AddCategory, GifGrid } from './components';
 import { useState } from 'react';
-import { tenorLogo } from './assets/svg/via_tenor_logo_grey.svg';
+import tenorLogo from './assets/svg/via_tenor_logo_grey.svg';
 
 export const GifExpertApp = () => {
-    const [ categories, setCategories ] = useState(['K-On! anime', 'Frieren: Beyond Journey\'s End', 'Kobayashi-san Chi no Maid Dragon']);
+    const [ categories, setCategories ] = useState(['Mario Kart 8', 'The legend of Zelda: Tears of the kingdom', 'Plants vs Zombies', 'It Takes Two EA']);
 
     const handleAddCategory = ( category ) => {
         if( categories.includes(category) ) return false;
